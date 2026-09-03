@@ -7,6 +7,48 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://shmumudr.github.io/tohar-site/halacha/index.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://shmumudr.github.io/tohar-site/halacha/hefsek.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://shmumudr.github.io/tohar-site/halacha/seven_clean.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://shmumudr.github.io/tohar-site/halacha/ketamim.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://shmumudr.github.io/tohar-site/halacha/onot_prisha.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://shmumudr.github.io/tohar-site/halacha/harchakot.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://shmumudr.github.io/tohar-site/halacha/tevila.html</loc>
+    <lastmod>2026-09-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://shmumudr.github.io/tohar-site/privacy.html</loc>
     <lastmod>2026-09-03</lastmod>
     <changefreq>yearly</changefreq>
