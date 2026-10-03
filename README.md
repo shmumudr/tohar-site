@@ -3,7 +3,8 @@ Landing page for Tohar WhatsApp bot
 
 ## Structure
 
-- `index.html`, `privacy.html`, `terms.html` — the site (hand-written).
+- `index.html`, `about.html`, `privacy.html`, `terms.html` — the site (hand-written).
+  `about.html` and the footer name the operator (Pardes Net / Shmuel Dror, Bnei Brak) so the site matches the Meta business profile.
 - `halacha/` — the halacha guide, generated from the bot's texts
   (`tohar-bot-prod/src/content/halachot.ts`) so the site and the bot always say the same thing.
   To refresh after the bot texts change, re-run the generator from the bot repo and commit the output;
