@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="google-site-verification" content="T0SIph4YAivDR2ArSQxn2IGAohPTUvKyKYRw5uKWbLQ">
+  <title>Seven clean days & mikvah night calculator | Tohar</title>
+  <meta name="description" content="Free calculator: enter the date of the sighting and your minhag, and get the hefsek tahara, the seven clean days and mikvah night, in Hebrew and civil dates.">
+  <meta property="og:title" content="Seven clean days & mikvah night calculator | Tohar">
+  <meta property="og:description" content="Free calculator: enter the date of the sighting and your minhag, and get the hefsek tahara, the seven clean days and mikvah night, in Hebrew and civil dates.">
+  <meta property="og:image" content="https://shmumudr.github.io/tohar-site/og-image.png">
+  <meta property="og:url" content="https://shmumudr.github.io/tohar-site/en/calculator.html">
+  <meta name="theme-color" content="#101a2b">
+  <link rel="canonical" href="https://shmumudr.github.io/tohar-site/en/calculator.html">
+  <link rel="alternate" hreflang="he" href="https://shmumudr.github.io/tohar-site/calculator.html">
+  <link rel="alternate" hreflang="en" href="https://shmumudr.github.io/tohar-site/en/calculator.html">
+  <link rel="alternate" hreflang="x-default" href="https://shmumudr.github.io/tohar-site/calculator.html">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebApplication", "name": "Seven clean days & mikvah night calculator", "url": "https://shmumudr.github.io/tohar-site/en/calculator.html", "applicationCategory": "UtilitiesApplication", "operatingSystem": "Any", "inLanguage": "en", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "ILS"}}, {"@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "What if the bleeding hasn't stopped on the day shown?", "acceptedAnswer": {"@type": "Answer", "text": "The hefsek moves to the day it stops, and the seven clean days start the day after. The calculator shows the earliest possible dates."}}, {"@type": "Question", "name": "Why does it matter if the sighting was before or after sunset?", "acceptedAnswer": {"@type": "Answer", "text": "The halachic day starts at sunset. A sighting after sunset counts as the next day, so every date moves by one."}}, {"@type": "Question", "name": "What if I find a stain during the seven clean days?", "acceptedAnswer": {"@type": "Answer", "text": "Any question about a stain is for your rav. If a new hefsek is needed, the count starts again from it."}}, {"@type": "Question", "name": "Does the calculator replace asking a rav?", "acceptedAnswer": {"@type": "Answer", "text": "No. It is a planning tool by the minhag you choose. Any doubt goes to a rav or a yoetzet halacha."}}]}]}</script>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&display=swap">
+  <link rel="stylesheet" href="../style.css?v=3">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="Tohar home">
+      <svg class="mark" viewBox="0 0 96 96" width="38" height="38" fill="none" aria-hidden="true"><path class="lg-ink" d="M26 22 C20 40 18 62 40 68 C58 72 70 62 68 48 C66 38 54 36 50 44 C47 50 52 55 57 53" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path class="lg-cu" d="M16 82 Q48 94 80 82" stroke-width="4" stroke-linecap="round"/><path class="lg-cu2" d="M28 90 Q48 97 68 90" stroke-width="3" stroke-linecap="round"/></svg>
+      <span class="brand-name">Tohar</span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="index.html#how">How it works</a>
+      <a href="calculator.html">Calculator</a>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a class="lang-switch" href="../calculator.html" lang="he" hreflang="he" aria-label="גרסה בעברית"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></svg>עברית</a>
+      <a class="btn btn-primary" href="https://wa.me/972559982758?text=Hello">Start on WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="calc">
+    <div class="container">
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="index.html">Tohar</a> › Seven clean days calculator</nav>
+      <h1>Seven clean days & mikvah night calculator</h1>
+      <p class="lead">Choose the date of the sighting and your minhag, and get the hefsek tahara, the seven clean days and mikvah night. Times follow Israel.</p>
+      <div class="calc-grid">
+        <form class="calc-form" id="calc-form" novalidate>
+          <fieldset>
+            <legend>Date of the sighting</legend>
+            <div class="date-row">
+              <select id="h-day" aria-label="Day"></select>
+              <select id="h-month" aria-label="Month"></select>
+              <select id="h-year" aria-label="Year"></select>
+            </div>
+            <label class="hint" for="g-date">or by civil date:</label>
+            <input type="date" id="g-date">
+          </fieldset>
+          <fieldset>
+            <legend>When was the sighting?</legend>
+            <div class="seg">
+              <label><input type="radio" name="sunset" value="before" checked><span>Before sunset</span></label>
+              <label><input type="radio" name="sunset" value="after"><span>After sunset</span></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Waiting days before the hefsek</legend>
+            <div class="seg">
+              <label><input type="radio" name="wait" value="5" checked><span>5 days</span></label>
+              <label><input type="radio" name="wait" value="4"><span>4 days</span></label>
+            </div>
+            <p class="hint">By minhag: Ashkenazi 5 days, Sephardi 4 days.</p>
+          </fieldset>
+        </form>
+        <div class="calc-results" aria-live="polite">
+          <dl>
+            <div><dt>Hefsek tahara (earliest)</dt><dd id="r-hefsek">—</dd></div>
+            <div><dt>Seven clean days</dt><dd id="r-clean">—</dd></div>
+            <div><dt>Mikvah night</dt><dd id="r-tevila">—</dd></div>
+          </dl>
+          <p class="calc-note" id="r-special" hidden></p>
+          <p class="calc-assume">This assumes the bleeding stopped by the hefsek day and every bedika is clean.</p>
+          <noscript><p class="calc-note">Please enable JavaScript to use the calculator.</p></noscript>
+          <div id="r-boards"></div>
+        </div>
+      </div>
+
+      <div class="article-cta">
+        <h2>Want Tohar to remind you of each bedika?</h2>
+        <p>Tohar does this calculation for you on WhatsApp and reminds you of every bedika at the time you choose. It is free, for women in Israel.</p>
+        <a class="btn btn-primary" href="https://wa.me/972559982758?text=Hello">Start on WhatsApp</a>
+      </div>
+
+      <div class="calc-explain">
+        <h2>How the calculator counts</h2>
+        <p>The day of the sighting counts as day one. If the sighting was after sunset, day one is the next day, because the halachic day starts at sunset.</p>
+        <p>The hefsek tahara is on the fifth day from the sighting by Ashkenazi minhag, or the fourth by Sephardi minhag. The hefsek bedika is done before sunset on that day.</p>
+        <p>The seven clean days start the day after the hefsek. Mikvah night is the night after the seventh day, after nightfall.</p>
+        <p>This is the same calculation the Tohar bot does on WhatsApp.</p>
+        <h2>Questions</h2>
+        <div class="faq">
+        <details>
+          <summary>What if the bleeding hasn't stopped on the day shown?</summary>
+          <p>The hefsek moves to the day it stops, and the seven clean days start the day after. The calculator shows the earliest possible dates.</p>
+        </details>
+        <details>
+          <summary>Why does it matter if the sighting was before or after sunset?</summary>
+          <p>The halachic day starts at sunset. A sighting after sunset counts as the next day, so every date moves by one.</p>
+        </details>
+        <details>
+          <summary>What if I find a stain during the seven clean days?</summary>
+          <p>Any question about a stain is for your rav. If a new hefsek is needed, the count starts again from it.</p>
+        </details>
+        <details>
+          <summary>Does the calculator replace asking a rav?</summary>
+          <p>No. It is a planning tool by the minhag you choose. Any doubt goes to a rav or a yoetzet halacha.</p>
+        </details>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="container">
+    <a class="brand on-dark" href="index.html">
+      <svg class="mark" viewBox="0 0 96 96" width="34" height="34" fill="none" aria-hidden="true"><path class="lg-ink" d="M26 22 C20 40 18 62 40 68 C58 72 70 62 68 48 C66 38 54 36 50 44 C47 50 52 55 57 53" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path class="lg-cu" d="M16 82 Q48 94 80 82" stroke-width="4" stroke-linecap="round"/><path class="lg-cu2" d="M28 90 Q48 97 68 90" stroke-width="3" stroke-linecap="round"/></svg>
+      <span class="brand-name">Tohar</span>
+    </a>
+    <nav class="foot-links" aria-label="Links">
+      <a href="calculator.html">Seven clean days calculator</a>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="terms.html">Terms of use</a>
+      <a href="mailto:bottahara@gmail.com">bottahara@gmail.com</a>
+    </nav>
+    <div class="foot-copy">© 2026 Tohar · <a href="mailto:bottahara@gmail.com">bottahara@gmail.com</a></div>
+    <div class="foot-legal">Tohar is a reminder service for Jewish family-purity observance. It is not a medical service and nothing is sold.</div>
+  </div>
+</footer>
+
+<script type="module" src="../calc/calculator.js"></script>
+</body>
+</html>
