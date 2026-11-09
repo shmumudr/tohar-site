@@ -278,3 +278,17 @@ footer.page-foot a { color: var(--ink); }
 @media (max-width: 860px) {
   .calc-grid { grid-template-columns: 1fr; }
 }
+
+/* Guides: quoted halacha passages */
+.article blockquote { margin: 18px 0 22px; padding: 18px 20px; background: var(--surface); border-radius: 12px; }
+.article blockquote p, .article blockquote li { margin: 0 0 8px; }
+.article blockquote ul { margin: 0; padding-inline-start: 20px; }
+.article blockquote cite { display: block; margin-top: 10px; font-style: normal; font-size: 14px; color: var(--muted); }
+.boards-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin: 18px 0 24px; }
+.guide-list { list-style: none; margin: 18px 0 0; padding: 0; }
+.guide-list li { border-top: 1px solid var(--line); }
+.guide-list li:last-child { border-bottom: 1px solid var(--line); }
+.guide-list a { display: block; padding: 16px 0; font-weight: 700; font-size: 18px; text-decoration: none; color: var(--ink); }
+.guide-list a:hover { color: var(--blue); }
+@media (max-width: 860px) { .boards-2 { grid-template-columns: 1fr; } }
+.boards-2 .day .g { display: none; }
