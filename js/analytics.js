@@ -118,13 +118,26 @@
     var reset = t.closest('[data-consent-reset]');
     if (reset) { e.preventDefault(); showBanner(); return; }
     var a = t.closest('a[href*="wa.me/"]');
-    if (a) {
-      gtag('event', 'whatsapp_click', {
-        link_location: linkLocation(a),
-        page_language: he ? 'he' : 'en',
-        transport_type: 'beacon'
-      });
-    }
+    if (!a) return;
+    var params = {
+      link_location: linkLocation(a),
+      page_language: he ? 'he' : 'en',
+      transport_type: 'beacon'
+    };
+    // The link opens WhatsApp in this tab, which unloads the page before
+    // gtag.js has sent the event. For a plain click, wait for the hit
+    // (event_callback), at most ~1s, then follow the link.
+    var plain = e.button === 0 && !e.ctrlKey && !e.metaKey && !e.shiftKey && !e.altKey &&
+      (!a.target || a.target === '_self');
+    if (!plain) { gtag('event', 'whatsapp_click', params); return; }
+    e.preventDefault();
+    var href = a.href;
+    var gone = false;
+    var go = function () { if (gone) return; gone = true; window.location.href = href; };
+    params.event_callback = go;
+    params.event_timeout = 800;
+    gtag('event', 'whatsapp_click', params);
+    setTimeout(go, 1000);
   });
 
   var calcSent = false;
