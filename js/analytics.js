@@ -14,7 +14,7 @@
 (function () {
   'use strict';
 
-  var MEASUREMENT_ID = 'G-XXXXXXXXXX';
+  var MEASUREMENT_ID = 'G-1C6FX1JYJP';
   var KEY = 'tohar_consent';
   if (!/^G-[A-Z0-9]{6,}$/.test(MEASUREMENT_ID) || MEASUREMENT_ID === 'G-XXXXXXXXXX') return;
 
