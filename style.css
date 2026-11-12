@@ -307,3 +307,28 @@ footer.page-foot a { color: var(--ink); }
 .consent-actions { display: flex; gap: 10px; flex-wrap: wrap; }
 .consent-actions .btn { padding: 9px 18px; font-size: 15px; font-family: inherit; border: 0; cursor: pointer; }
 .consent-reset { font: inherit; color: var(--blue); background: none; border: 0; padding: 0; text-decoration: underline; cursor: pointer; }
+
+/* Demo video (js/demo.js) */
+.how-grid { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: clamp(28px, 5vw, 64px); align-items: start; margin-top: 36px; }
+.how-grid .timeline { margin-top: 0; grid-column: 1; grid-row: 1; }
+.demo { margin: 0; position: sticky; top: 24px; grid-column: 2; grid-row: 1; }
+.demo-phone { position: relative; width: 100%; max-width: 300px; margin: 0 auto; aspect-ratio: 9 / 16; border: 8px solid var(--ink); border-radius: 34px; overflow: hidden; background: #efeae2; box-shadow: 0 18px 50px rgba(16, 26, 43, .18); }
+.demo-phone video { display: block; width: 100%; height: 100%; object-fit: cover; cursor: pointer; }
+.demo-play { position: absolute; border: 0; cursor: pointer; display: grid; place-items: center; color: #fff; background: rgba(16, 26, 43, .72); }
+.demo-sound { display: flex; align-items: center; gap: 8px; margin: 14px auto 0; padding: 9px 18px; border: 1px solid var(--line); border-radius: 999px; background: var(--bg); color: var(--ink); font: 500 15px var(--font); cursor: pointer; }
+.demo-sound:hover { border-color: var(--blue); color: var(--blue); }
+.demo-sound:focus-visible, .demo-play:focus-visible { outline: 3px solid var(--blue); outline-offset: 2px; }
+.demo-sound.is-on { background: var(--blue-soft); border-color: var(--blue); color: var(--blue-deep); }
+.demo-sound svg { width: 20px; height: 20px; flex: none; }
+.demo-sound .ic-on { display: none; }
+.demo-sound.is-on .ic-on { display: block; }
+.demo-sound.is-on .ic-off { display: none; }
+.demo-play { inset: 0; margin: auto; width: 68px; height: 68px; border-radius: 50%; }
+.demo-play[hidden] { display: none; }
+.demo-play svg { width: 28px; height: 28px; margin-left: 4px; }
+.demo figcaption { margin-top: 10px; text-align: center; color: var(--muted); font-size: 14px; }
+@media (max-width: 860px) {
+  .how-grid { grid-template-columns: 1fr; }
+  .demo, .how-grid .timeline { position: static; grid-column: 1; grid-row: auto; }
+  .demo-phone { max-width: 280px; }
+}

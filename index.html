@@ -26,8 +26,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&display=swap">
-  <link rel="stylesheet" href="style.css?v=5">
+  <link rel="stylesheet" href="style.css?v=6">
   <script src="/js/analytics.js"></script>
+  <script src="/js/demo.js" defer></script>
 </head>
 <body>
 
@@ -111,50 +112,62 @@
     <div class="container">
       <h2>איך זה נראה במחזור אחד</h2>
       <p class="section-intro">כך טוהר מלווה את המחזור מהלוח שלמעלה, יום אחרי יום. ההרשמה קצרה, כשתי דקות בוואטסאפ: בוחרים שפה, שם, מנהג, ימי המתנה ושעות שנוחות לך לתזכורות.</p>
-      <ol class="timeline">
-        <li>
-          <span class="when">א׳ כסלו</span>
-          <div>
-            <h3>יום הראייה</h3>
-            <p>כותבים לטוהר את התאריך העברי, למשל "א כסלו". אם הראייה הייתה אחרי השקיעה, טוהר שואלת ומחשבת מהיום הבא.</p>
+      <div class="how-grid">
+        <figure class="demo">
+          <div class="demo-phone">
+            <video class="demo-video" muted playsinline loop preload="none" poster="/media/demo-poster-he.jpg" aria-label="סרטון הדגמה: כך נראית שיחה עם טוהר בוואטסאפ לאורך מחזור אחד">
+              <source src="/media/demo-he.mp4" type="video/mp4">
+            </video>
+            <button class="demo-play" type="button" aria-label="הפעלת הסרטון" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 4.5v15l12-7.5z"/></svg></button>
           </div>
-        </li>
-        <li>
-          <span class="when">ה׳ כסלו</span>
-          <div>
-            <h3>יום ההפסק</h3>
-            <p>בבוקר מגיעה הודעה: "היום הוא יום הפסק הטהרה". אחרי הבדיקה מעדכנים בתפריט, וטוהר קובעת את שבעת הנקיים.</p>
-          </div>
-        </li>
-        <li>
-          <span class="when">ו׳–י״ב כסלו</span>
-          <div>
-            <h3>שבעה נקיים</h3>
-            <p>תזכורת לבדיקה מגיעה בשעה שבחרת, בבוקר, בערב או לפני השקיעה. לא חייבים תזכורת בכל יום: אפשר לבחור, למשל, רק יום 1 ויום 7.</p>
-          </div>
-        </li>
-        <li>
-          <span class="when">אם יש כתם</span>
-          <div>
-            <h3>הספירה מתחילה מחדש</h3>
-            <p>לוחצים "מצאתי כתם" ומאשרים. הספירה מתאפסת, וטוהר מחכה להפסק חדש.</p>
-          </div>
-        </li>
-        <li>
-          <span class="when">י״א כסלו, שבת</span>
-          <div>
-            <h3>שבת וחג</h3>
-            <p>בשבת ובחג אין הודעות. במוצאי שבת טוהר שואלת איך היו הבדיקות שלא הזכירה.</p>
-          </div>
-        </li>
-        <li>
-          <span class="when">ליל י״ג כסלו</span>
-          <div>
-            <h3>ליל הטבילה</h3>
-            <p>ביום השביעי מגיעה הודעה על ליל הטבילה. אחרי הטבילה מאשרים, והמחזור נשמר בהיסטוריה.</p>
-          </div>
-        </li>
-      </ol>
+          <button class="demo-sound" type="button" aria-pressed="false"><svg class="ic-off" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 9v6h4l5 5V4L7 9H3z"/><path d="M16 9l5 6M21 9l-5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg><svg class="ic-on" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 9v6h4l5 5V4L7 9H3z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg><span class="demo-sound-text">הפעלת קול</span></button>
+          <figcaption>כך זה נראה בוואטסאפ.</figcaption>
+        </figure>
+        <ol class="timeline">
+          <li>
+            <span class="when">א׳ כסלו</span>
+            <div>
+              <h3>יום הראייה</h3>
+              <p>כותבים לטוהר את התאריך העברי, למשל "א כסלו". אם הראייה הייתה אחרי השקיעה, טוהר שואלת ומחשבת מהיום הבא.</p>
+            </div>
+          </li>
+          <li>
+            <span class="when">ה׳ כסלו</span>
+            <div>
+              <h3>יום ההפסק</h3>
+              <p>בבוקר מגיעה הודעה: "היום הוא יום הפסק הטהרה". אחרי הבדיקה מעדכנים בתפריט, וטוהר קובעת את שבעת הנקיים.</p>
+            </div>
+          </li>
+          <li>
+            <span class="when">ו׳–י״ב כסלו</span>
+            <div>
+              <h3>שבעה נקיים</h3>
+              <p>תזכורת לבדיקה מגיעה בשעה שבחרת, בבוקר, בערב או לפני השקיעה. לא חייבים תזכורת בכל יום: אפשר לבחור, למשל, רק יום 1 ויום 7.</p>
+            </div>
+          </li>
+          <li>
+            <span class="when">אם יש כתם</span>
+            <div>
+              <h3>הספירה מתחילה מחדש</h3>
+              <p>לוחצים "מצאתי כתם" ומאשרים. הספירה מתאפסת, וטוהר מחכה להפסק חדש.</p>
+            </div>
+          </li>
+          <li>
+            <span class="when">י״א כסלו, שבת</span>
+            <div>
+              <h3>שבת וחג</h3>
+              <p>בשבת ובחג אין הודעות. במוצאי שבת טוהר שואלת איך היו הבדיקות שלא הזכירה.</p>
+            </div>
+          </li>
+          <li>
+            <span class="when">ליל י״ג כסלו</span>
+            <div>
+              <h3>ליל הטבילה</h3>
+              <p>ביום השביעי מגיעה הודעה על ליל הטבילה. אחרי הטבילה מאשרים, והמחזור נשמר בהיסטוריה.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
       <p class="section-intro"><a href="calculator.html">לחשב את המחזור שלך במחשבון שבעה נקיים ←</a></p>
     </div>
   </section>
