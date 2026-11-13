@@ -27,8 +27,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&display=swap">
-  <link rel="stylesheet" href="../style.css?v=5">
+  <link rel="stylesheet" href="../style.css?v=6">
   <script src="/js/analytics.js"></script>
+  <script src="/js/demo.js" defer></script>
 </head>
 <body>
 
@@ -110,50 +111,62 @@
     <div class="container">
       <h2>One cycle, step by step</h2>
       <p class="section-intro">Here is how Tohar follows the cycle on the calendar above, day by day. Sign-up is short, about two minutes on WhatsApp: you choose a language, your name, minhag, waiting days and the reminder times that suit you.</p>
-      <ol class="timeline">
-        <li>
-          <span class="when">1 Kislev</span>
-          <div>
-            <h3>The sighting</h3>
-            <p>Send Tohar the Hebrew date, in English or Hebrew, for example "1 Kislev 5787". If it was after sunset, Tohar asks and counts from the next day.</p>
+      <div class="how-grid">
+        <figure class="demo">
+          <div class="demo-phone">
+            <video class="demo-video" muted playsinline loop preload="none" poster="/media/demo-poster-en.jpg" aria-label="Demo video: a WhatsApp chat with Tohar through one cycle">
+              <source src="/media/demo-en.mp4" type="video/mp4">
+            </video>
+            <button class="demo-play" type="button" aria-label="Play the video" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 4.5v15l12-7.5z"/></svg></button>
           </div>
-        </li>
-        <li>
-          <span class="when">5 Kislev</span>
-          <div>
-            <h3>Hefsek tahara</h3>
-            <p>In the morning you get a message: "Today is hefsek tahara day." After the bedika you update Tohar from the menu, and it sets the seven clean days.</p>
-          </div>
-        </li>
-        <li>
-          <span class="when">6–12 Kislev</span>
-          <div>
-            <h3>Seven clean days</h3>
-            <p>A bedika reminder arrives at the time you chose: morning, evening, or a set time before sunset. You don't have to be reminded every day; you can choose, say, day 1 and day 7 only.</p>
-          </div>
-        </li>
-        <li>
-          <span class="when">If there is a stain</span>
-          <div>
-            <h3>The count starts again</h3>
-            <p>Tap "Found a stain" and confirm. The count resets and Tohar waits for a new hefsek. Any question about a stain is for your rav.</p>
-          </div>
-        </li>
-        <li>
-          <span class="when">11 Kislev, Shabbat</span>
-          <div>
-            <h3>Shabbat and Yom Tov</h3>
-            <p>No messages. After Shabbat, Tohar asks how the bedikot it couldn't remind you about went.</p>
-          </div>
-        </li>
-        <li>
-          <span class="when">Night of 13 Kislev</span>
-          <div>
-            <h3>Mikvah night</h3>
-            <p>On day seven you get a message about mikvah night. After immersion you confirm, and the cycle is saved to your history.</p>
-          </div>
-        </li>
-      </ol>
+          <button class="demo-sound" type="button" aria-pressed="false"><svg class="ic-off" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 9v6h4l5 5V4L7 9H3z"/><path d="M16 9l5 6M21 9l-5 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg><svg class="ic-on" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 9v6h4l5 5V4L7 9H3z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18.5 5.5a9 9 0 0 1 0 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg><span class="demo-sound-text">Turn sound on</span></button>
+          <figcaption>This is how it looks on WhatsApp.</figcaption>
+        </figure>
+        <ol class="timeline">
+          <li>
+            <span class="when">1 Kislev</span>
+            <div>
+              <h3>The sighting</h3>
+              <p>Send Tohar the Hebrew date, in English or Hebrew, for example "1 Kislev 5787". If it was after sunset, Tohar asks and counts from the next day.</p>
+            </div>
+          </li>
+          <li>
+            <span class="when">5 Kislev</span>
+            <div>
+              <h3>Hefsek tahara</h3>
+              <p>In the morning you get a message: "Today is hefsek tahara day." After the bedika you update Tohar from the menu, and it sets the seven clean days.</p>
+            </div>
+          </li>
+          <li>
+            <span class="when">6–12 Kislev</span>
+            <div>
+              <h3>Seven clean days</h3>
+              <p>A bedika reminder arrives at the time you chose: morning, evening, or a set time before sunset. You don't have to be reminded every day; you can choose, say, day 1 and day 7 only.</p>
+            </div>
+          </li>
+          <li>
+            <span class="when">If there is a stain</span>
+            <div>
+              <h3>The count starts again</h3>
+              <p>Tap "Found a stain" and confirm. The count resets and Tohar waits for a new hefsek. Any question about a stain is for your rav.</p>
+            </div>
+          </li>
+          <li>
+            <span class="when">11 Kislev, Shabbat</span>
+            <div>
+              <h3>Shabbat and Yom Tov</h3>
+              <p>No messages. After Shabbat, Tohar asks how the bedikot it couldn't remind you about went.</p>
+            </div>
+          </li>
+          <li>
+            <span class="when">Night of 13 Kislev</span>
+            <div>
+              <h3>Mikvah night</h3>
+              <p>On day seven you get a message about mikvah night. After immersion you confirm, and the cycle is saved to your history.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
       <p class="section-intro"><a href="calculator.html">Work out your own cycle with the calculator →</a></p>
     </div>
   </section>
